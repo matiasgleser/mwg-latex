@@ -15,7 +15,3 @@ These references are resolved, i.e. the equations are copied into the propositio
 
 Some sections of the book contain no definitions etc.
 These are not included.
-
-## Typos
-I am sure there are still typos in here.
-If you spot any, please create an Issue or Pull Request (or email me at [pet.thore@gmail.com](mailto:pet.thore@gmail.com)).
