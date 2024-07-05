@@ -1,0 +1,25 @@
+name: LaTeX Build
+
+on:
+  push:
+    paths:
+      - '**.tex'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up LaTeX environment
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: main.tex  # The file to compile
+
+    - name: Upload PDF
+      uses: actions/upload-artifact@v3
+      with:
+        name: compiled-pdf
+        path: main.pdf  # The file name it compiles to
